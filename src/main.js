@@ -2,11 +2,8 @@ import App from './app.mpx?app=true'
 import Router from 'vue-router'
 import Vue from 'vue'
 
-console.log('xxx', App)
-
 delete App.router
 
-// console.log('global.__mpxRouter', global.__mpxRouter.options.routes)
 Vue.use(Router)
 export const createRouter = () => {
   return new Router({

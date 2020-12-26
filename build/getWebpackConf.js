@@ -20,7 +20,7 @@ module.exports = function getWebpackConfs (options) {
   }
 
   const output = {
-    path: resolveDist(mode, ssr || subDir)
+    path: resolveDist(ssr ? 'ssr' : mode, ssr || subDir)
   }
   const name = plugin ? 'plugin-compiler' : `${mode}-compiler`
   const rules = getRules(options)

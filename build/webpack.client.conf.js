@@ -1,6 +1,6 @@
-// const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
+const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 module.exports = {
-  // plugins: [
-  //   new VueSSRClientPlugin()
-  // ]
+  plugins: [
+    new VueSSRClientPlugin()
+  ]
 }
