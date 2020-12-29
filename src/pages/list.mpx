@@ -1,0 +1,20 @@
+<template>
+  <view>
+    {{items.length}}
+     <view wx:for="item in items">
+      <text>{{item.userId}}</text>
+      <text>{{item.title}}</text>
+      <text>{{item.body}}</text>
+    </view>
+  </view>
+  
+</template>
+
+<script lang="ts" src="./list.ts"></script>
+
+<script type="application/json">
+  {
+    "usingComponents": {
+    }
+  }
+</script>

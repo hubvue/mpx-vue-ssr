@@ -5,6 +5,7 @@ import Vue from 'vue'
 delete App.router
 
 Vue.use(Router)
+
 export const createRouter = () => {
   return new Router({
     model: 'history',

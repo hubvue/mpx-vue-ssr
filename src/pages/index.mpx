@@ -1,5 +1,8 @@
 <template>
-  <list></list>
+  <view>
+    <list></list>
+  </view>
+  
 </template>
 
 <script lang="ts" src="./index.ts"></script>

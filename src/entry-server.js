@@ -10,7 +10,13 @@ export default context => {
         // eslint-disable-next-line prefer-promise-reject-errors
         return reject({ code: 404 })
       }
-      resolve(app)
+      Promise.all(matchedComponents.map(Component => {
+        if (Component.methods.asyncData) {
+          return Component.methods.asyncData()
+        }
+      })).then(() => {
+        resolve(app)
+      })
     })
   })
 }
